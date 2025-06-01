@@ -1,12 +1,59 @@
-# React + Vite
+# React Todo List App with Vite and Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A feature-rich todo list application built with React, Vite, and Tailwind CSS that includes task management, filtering, sorting, and localStorage persistence.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, delete, and mark tasks as complete
+- Filter tasks (All/Active/Completed)
+- Sort tasks (None/Date/Alphabetical)
+- LocalStorage persistence
+- Responsive design
+- Task counter
+- Input validation
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v7 or higher) or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bhumikapatil22/TodoList-Celebal-Task.git
+2. cd TodoList-Celebal-Task
+3. npm install
+4. npm run dev
+5. Open http://localhost:5173 in your browser.
+
+### Testing Guide
+
+### 1. Task Management
+
+#### i) Add Task
+- **Action**: Type a task and click "Add" or press Enter  
+  **Expected**: Task appears in the list
+- **Action**: Try adding an empty task  
+  **Expected**: Shows validation error
+
+#### ii) Complete Task
+- **Action**: Click the checkbox  
+  **Expected**: 
+  - Task shows strikethrough styling
+  - Counter updates correctly
+
+#### iii) Delete Task
+- **Action**: Click "Delete"  
+  **Expected**: Task is removed from the list
+
+### 2. Filtering
+- **Action**: Switch between "All"/"Active"/"Completed"  
+  **Expected**: Only shows tasks matching selected filter
+
+### 3. Sorting
+- **Date**: Tasks ordered oldest → newest
+- **Alphabetical**: Tasks ordered A → Z
+- **None**: Maintains original task order
